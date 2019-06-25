@@ -25,6 +25,9 @@ generate_key_pdf() {
   if [[ $3 == *a* ]]; then
     usage=$usage"authorization, "
   fi
+  if [[ $3 == *c* ]]; then
+    usage=$usage"key certification, "
+  fi
   
   # remove trailing ','
   usage="${usage:0:${#usage}-2}"
